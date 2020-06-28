@@ -15,7 +15,9 @@ THINGPROXY=http://localhost:3000/fetch/
 ```
 
 ## Example Code
-```typescript 
+```typescript
+import { phetch } from "https://raw.githubusercontent.com/zinthose/thingproxy-deno/master/mod.ts";
+
 const response = await phetch("https://postman-echo.com/get?foo1=bar1&oo2=bar2"); 
 console.log(response.status); 
 // e.g. 200 console.log(response.statusText); 
